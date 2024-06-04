@@ -4,3 +4,13 @@
 
 # A = 3; B = 5 -> 243 (3⁵)
 # A = 2; B = 3 -> 8
+
+a, b = 3, 5
+
+def stepen(a, b):
+    if a == 0 or b ==0:
+        return 1
+    return a * stepen(a, b - 1)
+
+print(stepen(a, b))
+
