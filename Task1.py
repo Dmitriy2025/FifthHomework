@@ -8,7 +8,9 @@
 a, b = 3, 5
 
 def stepen(a, b):
-    if a == 0 or b ==0:
+    if a == 0:
+        return 0
+    elif b == 0:
         return 1
     return a * stepen(a, b - 1)
 
