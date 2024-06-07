@@ -12,6 +12,8 @@ def stepen(a, b):
         return 0
     elif b == 0:
         return 1
+    elif b < 0:
+        return 1/a * stepen(a, b + 1) # случай для b < 0
     return a * stepen(a, b - 1)
 
 print(stepen(a, b))
