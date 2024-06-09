@@ -1,21 +1,31 @@
 k = 300
 
 def delit(n):
-    list1 = []
     sum = 0
+    list1 = []
     for i in range(1, n):
-        if n%i == 0:
+        if n % i == 0:
             sum += i
             list1.append(i)
-    #print(sum)
-    return list1
-    
-def comp(list1, list2):
-    if list1 == list2:
+    return sum, list1
+
+def comp(number1, list1, number2, list2):
+    if list1 == list2 and number1 == number2:
         return True
     return False
-    
-print(delit(k))
-print(delit(568))
 
-print(comp(delit(k), delit(568)))
+# a = delit(k)
+# b, c = a[0], a[1]
+
+# d = delit(b)
+# e, f = d[0], d[1]
+
+# print(comp(b, c, e, f))
+
+# print(b)
+# print(c)
+# print(e)
+# print(f)
+
+print(delit(220))
+print(delit(284))
